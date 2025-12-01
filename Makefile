@@ -1,36 +1,24 @@
-
-SRC = $(addsuffix .c, ft_isalpha)
-
-OBJS := $(SRC:%.c=%.o)
-
-NAME = libft.a
+NAME = main
 
 CC = gcc
+CFLAGS = -Wall -Wextra -g3
 
-CCFLAGS = -Wall -Wextra -Werror
+SRCS = main.c ft_isalpha.c ft_strlen.c 
 
-INC_DIR =.
-
-CPPFLAGS= I$(INC_DIR)
-
-RM = rm -f
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(CCFLAGS) $^ -o $@
-
+	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
 
 %.o: %.c
-	$(CC) $(CPPFLAGS) $(CCFLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJS)
+	del /Q *.o
+
+fclean: clean
+	del /Q $(NAME).exe
 
 re: fclean all
-
-.PHONY: all clean fclean re 
-
-
-
-
