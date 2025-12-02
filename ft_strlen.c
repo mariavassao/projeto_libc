@@ -8,3 +8,5 @@ size_t ft_strlen(const char *s){
     }
     return (i);
  }
+
+ // M a r i a \0

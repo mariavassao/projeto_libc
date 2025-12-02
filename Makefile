@@ -3,7 +3,7 @@ NAME = main
 CC = gcc
 CFLAGS = -Wall -Wextra -g3
 
-SRCS = main.c ft_isalpha.c ft_strlen.c 
+SRCS = main.c ft_isalpha.c ft_strlen.c ft_memset.c ft_bzero.c
 
 OBJS = $(SRCS:.c=.o)
 

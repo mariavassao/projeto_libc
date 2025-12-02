@@ -1,12 +1,12 @@
-#include <stdio.h>
 #include "libft.h"
+#include <stdio.h>
 
 int main(void)
 {
-    char *texto = "Maria";
+    char texto[6] = "Maria";
 
-    printf("Texto: %s\n", texto);
-    printf("Tamanho: %d\n", ft_strlen(texto));
+    ft_bzero(texto, 6); // apaga tudo
 
-    return 0;
+    if (texto[0] == '\0')
+        printf("String limpa!\n");
 }
