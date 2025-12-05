@@ -23,5 +23,5 @@ void *ft_momvome(void*dst, const void *src, size_t len){
             temp_dst[i] = temp_src[i];
         }
     }
-    return dst;
+    return (dst);
 }

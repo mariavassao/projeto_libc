@@ -1,12 +1,13 @@
 #include "libft.h"
 #include <stdio.h>
 
-int main(void)
-{
-    char texto[6] = "Maria";
+#include <stdio.h>
 
-    ft_bzero(texto, 6); // apaga tudo
+int main() {
+    char origem[10] = "Hello";
+    char destino[10] = {0};
+    ft_momvome(destino, origem, 6);  
+    printf("Destino apos a copia: %s\n", destino);
 
-    if (texto[0] == '\0')
-        printf("String limpa!\n");
+    return 0;
 }
