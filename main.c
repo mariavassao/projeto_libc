@@ -2,6 +2,6 @@
 #include <stdio.h>
 
 int main() {
-    char *teste = ft_substr("esse teste", 3, 5);
+    char *teste = ft_strjoin("bom", "dia");
     printf(" resultado %s", teste);
 }
