@@ -1,24 +1,49 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "cppbuild",
-			"label": "Build com libft",
-			"command": "C:\\MinGW\\bin\\gcc.exe",
-			"args": [
-				"-Wall",
-				"-Wextra",
-				"-g",
-				"${fileDirname}\\main.c",
-				"${fileDirname}\\ft_isalpha.c",
-				"-o",
-				"${fileDirname}\\main.exe"
-			],
-			"options": {
-				"cwd": "${fileDirname}"
-			},
-			"problemMatcher": ["$gcc"],
-			"group": "build"
-		}
-	]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build com libft",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "${fileDirname}\\main.c",
+                "${fileDirname}\\ft_isalpha.c",
+                "-o",
+                "${fileDirname}\\main.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: main.c arquivo de build ativo",
+            "command": "c:\\Users\\User\\Documents\\C\\sintaxesbasicas\\main.c",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "c:\\Users\\User\\Documents\\C\\sintaxesbasicas"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Tarefa gerada pelo Depurador."
+        }
+    ]
 }

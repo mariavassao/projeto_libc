@@ -1,13 +1,18 @@
 #include "libft.h"
 
 char *ft_strjoin(const char *s1, const char *s2){
-    size_t len_1, len_2, i;
+    size_t len_1, len_2, i,j;
     char *novastr;
 
     len_1 = ft_strlen(s1);
     len_2 = ft_strlen(s2);
 
-    novastr = malloc(len_1 + len_2 + 1);
+    novastr = (char*) malloc(len_1 + len_2 + 1);
+    if (!novastr)
+    {
+        return NULL;
+    }
+    
     i=0;
 
     while (s1[i])
@@ -16,10 +21,10 @@ char *ft_strjoin(const char *s1, const char *s2){
         i++;
     }
 
-    i=0;
-    while (s2[i])
+    j=0;
+    while (s2[j])
     {
-        novastr[len_1++] = s2[i];   
+        novastr[i] = s2[j++];   
         i++;
     }
     novastr[i] = '\0';
