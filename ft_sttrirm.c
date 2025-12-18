@@ -10,7 +10,7 @@
    }
    
    start = 0;
-   end = ft_strlen(s1) - 1;
+   end = ft_strlen(s1);
    i=0;
    while (start <= end && s1[i] == set)
    {
