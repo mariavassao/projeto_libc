@@ -1,7 +1,7 @@
 
 # 📚 Libft
 
-> Primeira biblioteca estática desenvolvida no currículo da 42 School.
+> Primeira biblioteca inspirado no currículo da 42 School.
 > Reimplementação de funções da libc + utilitários adicionais + lista encadeada.
 
 ---
