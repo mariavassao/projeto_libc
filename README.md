@@ -1,7 +1,3 @@
-Perfeito 👩‍💻
-Agora vou montar um **README técnico, estruturado e profissional**, no padrão que recrutadores veem no GitHub.
-
----
 
 # 📚 Libft
 
