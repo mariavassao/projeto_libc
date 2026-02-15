@@ -30,10 +30,11 @@ int word_count(const char *str, char c){
     {
        if (*str != c && i == 0)
        {
-        i++;
+         i = 1;
+         cont++;
        } else
        {
-        cont++;
+        
        }
     }
     while (s[i] && s[i] != c)
