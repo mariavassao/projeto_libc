@@ -28,7 +28,7 @@ char *fill_word(const char *nova, int start, int end){
    
    int i = 0;
 
-   while (start < end)
+   while (i < end)
    {
       res[i] = nova[start];
       i++;
