@@ -1,24 +1,24 @@
 #include "libft.h"
 
-char	alternar_case(unsigned int i, char c)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+
+void	alternar_case(unsigned int i, char *c)
 {
-	if (c >= 'a' && c <= 'z' && i % 2 == 0)
-		return (c - 32);
-	if (c >= 'A' && c <= 'Z' && i % 2 != 0)
-		return (c + 32);
-	return (c);
+	if (*c >= 'a' && *c <= 'z' && i % 2 == 0)
+		*c = *c - 32;
+	else if (*c >= 'A' && *c <= 'Z' && i % 2 != 0)
+		*c = *c + 32;
 }
 
 int	main(void)
 {
-	char *original = "casa42sp";
-	char *resultado;
+	char str[] = "casa42sp";
 
-	resultado = ft_strmapi(original, alternar_case);
+	printf("Antes: %s\n", str);
 
-	printf("Original: %s\n", original);
-	printf("Resultado: %s\n", resultado);
+	ft_striteri(str, alternar_case);
 
-	free(resultado);
+	printf("Depois: %s\n", str);
+
 	return (0);
 }
