@@ -14,12 +14,13 @@ static int len(int n){
 char *ft_itoa( int n){
     int tamanho = len(n);
     char *str = malloc(tamanho+1);
-    if (n < 0)
-    {
-        str[0] = '-';
-        tamanho++;
-        n = -n;
-    }
+    
+    // if (n < 0)
+    // {
+    //     str[0] = '-';
+    //     tamanho++;
+    //     n = -n;
+    // }
 
     int i = tamanho - 1;
 
