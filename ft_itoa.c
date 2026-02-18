@@ -3,8 +3,6 @@
 static int len(int n){
     int i = 0;
 
-    
-
     while (n != 0)
     {    
         n /= 10;
@@ -22,10 +20,11 @@ char *ft_itoa( int n){
     {
        str[0] = '-';
        n = -n;
+       tamanho++;
     }
    
     int i = tamanho - 1;
-    while (i >= 0)
+    while (i >= 0 && str[i] != '-')
     {
         str[i] = (n % 10) + '0';
         n/=10;

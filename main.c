@@ -4,7 +4,7 @@ int main(void)
 {
     char *str;
 
-    str = ft_itoa(-1);
+    str = ft_itoa(-2024);
     printf("%s\n", str);
     return (0);
 }
