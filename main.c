@@ -1,7 +1,5 @@
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char *));
-
 void	alternar_case(unsigned int i, char *c)
 {
 	if (*c >= 'a' && *c <= 'z' && i % 2 == 0)
